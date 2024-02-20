@@ -19,12 +19,15 @@ package main
 //  blue
 // ---------------------------------------------------------
 
+import "fmt"
+
 func main() {
 	// UNCOMMENT THE CODE BELOW:
 
-	// color := "green"
+	color := "green"
 
 	// ADD YOUR CODE BELOW:
 
-	// ?
+	color = "blue"
+	fmt.Println(color)
 }

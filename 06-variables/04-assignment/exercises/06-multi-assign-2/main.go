@@ -25,14 +25,20 @@ package main
 //  It is 19.5 degrees
 // ---------------------------------------------------------
 
+import "fmt"
+
 func main() {
 	// UNCOMMENT THE CODE BELOW:
 
-	// var (
-	// 	planet string
-	// 	isTrue bool
-	// 	temp   float64
-	// )
+	var (
+		planet string
+		isTrue bool
+		temp   float64
+	)
 
 	// ADD YOUR CODE BELOW
+	planet, isTrue, temp = "Mars", true, 19.5
+	fmt.Println("Air is good on", planet)
+	fmt.Println("It's", isTrue)
+	fmt.Println("It is", temp, "degrees")
 }

@@ -11,7 +11,7 @@ package main
 // ---------------------------------------------------------
 // EXERCISE: Multi Short Func
 //
-// 	1. Declare two variables using multiple short declaration syntax
+//  1. Declare two variables using multiple short declaration syntax
 //
 //  2. Initialize the variables using `multi` function below
 //
@@ -27,13 +27,15 @@ package main
 //  4
 // ---------------------------------------------------------
 
+import "fmt"
+
 func main() {
 	// ADD YOUR DECLARATIONS HERE
-	//
+	_, b := multi()
 
 	// THEN UNCOMMENT THE CODE BELOW
 
-	// fmt.Println(b)
+	fmt.Println(b)
 }
 
 // multi is a function that returns multiple int values

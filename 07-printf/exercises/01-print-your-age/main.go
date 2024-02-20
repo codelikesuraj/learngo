@@ -20,6 +20,8 @@ package main
 //  You should change 30 to your age, of course.
 // ---------------------------------------------------------
 
+import "fmt"
+
 func main() {
-	// ?
+	fmt.Printf("I'm %d years old\n", 24)
 }

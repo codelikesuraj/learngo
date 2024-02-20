@@ -17,6 +17,8 @@ package main
 // 	Type of hello is string
 // ---------------------------------------------------------
 
+import "fmt"
+
 func main() {
-	// ?
+	fmt.Printf("Type of %s is %[1]T\n", "hello")
 }

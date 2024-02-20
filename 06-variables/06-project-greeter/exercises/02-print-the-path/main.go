@@ -22,5 +22,11 @@ package main
 //  myprogram
 // ---------------------------------------------------------
 
+import (
+	"fmt"
+	"os"
+)
+
 func main() {
+	fmt.Println(os.Args[0]);
 }

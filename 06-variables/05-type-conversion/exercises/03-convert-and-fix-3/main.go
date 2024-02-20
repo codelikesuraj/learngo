@@ -17,6 +17,8 @@ package main
 //  5.5
 // ---------------------------------------------------------
 
+import "fmt"
+
 func main() {
-	// fmt.Println(int(5.5))
+	fmt.Println(5.5)
 }

@@ -27,10 +27,16 @@ package main
 //  Nice to meet you all.
 // ---------------------------------------------------------
 
+import (
+	"fmt"
+	"os"
+)
+
 func main() {
 	// TYPE YOUR CODE HERE
-
-	// BONUS #1:
-	// Observe the error if you pass less then 3 arguments.
-	// Search on the web how to solve that.
+	fmt.Println("There are", len(os.Args[1:]), "people!")
+	for _, name := range os.Args[1:] {
+		fmt.Println("Hello great", name, "!")
+	}
+	fmt.Println("Nice to meet you all.")
 }
