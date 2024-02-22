@@ -49,5 +49,23 @@ package main
 //    "x" is a consonant.
 // ---------------------------------------------------------
 
+import (
+	"fmt"
+	"os"
+	"strings"
+)
+
 func main() {
+	if len(os.Args) != 2 || len(os.Args[1]) != 1 {
+		fmt.Println("Give me a letter")
+		return
+	}
+
+	if c := os.Args[1]; strings.ContainsAny("wyWY", c) == true {
+		fmt.Printf("%q is sometimes a vowel, sometimes not.\n", c)
+	} else if strings.ContainsAny("aeiouAEIOU", c) == true {
+		fmt.Printf("%q is a vowel.\n", c)
+	} else {
+		fmt.Printf("%q is a consonant.\n", c)
+	}
 }
