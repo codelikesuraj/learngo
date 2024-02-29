@@ -36,5 +36,37 @@ package main
 //    2024 is a leap year.
 // ---------------------------------------------------------
 
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
+
 func main() {
+	args := os.Args
+	if len(args) != 2 {
+		fmt.Println("Give me a year number")
+		return
+	}
+
+	year, err := strconv.Atoi(args[1])
+	if err != nil {
+		fmt.Printf("%q is not a valid year\n", args[1])
+		return
+	}
+
+	var leap bool
+	if year % 400 == 0 {
+		leap = true
+	} else if year % 100 == 0 {
+		leap = false
+	} else if year % 4 == 0 {
+		leap = true
+	}
+
+	if leap {
+		fmt.Println(year, "is a leap year")
+	} else {
+		fmt.Println(year, "is not a leap year")
+	}
 }
